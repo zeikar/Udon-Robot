@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="원본.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="확장.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
