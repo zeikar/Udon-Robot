@@ -13,13 +13,13 @@ using namespace std;
 double expntl(double);
 
 // 도착 시간. 평균 200 마다 손님이 도착.
-#define ARRIVAL_TIME 200.0
+#define ARRIVAL_TIME 12.5
 // 서비스 시간. 평균 100초 후에 손님이 떠남.
 #define SERVICE_TIME 100.0
 // 전체 시뮬레이션 시간.
 #define SIMULATION_TIME 200000.0
 // 좌석의 개수.
-#define NUMBER_OF_SEATS 1
+#define NUMBER_OF_SEATS 10
 
 int main()
 {
@@ -144,7 +144,7 @@ int main()
 	double Lambda = A / elapsed_time;
 	X = C / elapsed_time;
 	// 좌석의 이용률은 전체 사용한 시간을 좌석 수로 나눈 값.
-	U = LsS / elapsed_time / numberOfSeats;
+	U = B / elapsed_time / numberOfSeats;
 	// 가게에 있는 평균 고객 수, 대기 고객 수, 서비스 고객 수는 그래프의 넓이를 시간으로 나눈 값.
 	L = s / elapsed_time;
 	double Lq = LqS / elapsed_time;
